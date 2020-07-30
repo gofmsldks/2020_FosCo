@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad29a76c-d95a-4070-b5ec-555c85af0d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/3.18.0/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/pcd_write.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/pcd_write_test.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/pcd_write_test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/build/test_pcd.pcd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/pcd_write.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/2020_FosCo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2020_FosCo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/K_means_IRIS_SampleData" beforeDir="false" afterPath="$PROJECT_DIR$/K_means_IRIS_SampleData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
