@@ -5,15 +5,16 @@ import matplotlib.pyplot  as plt
 import seaborn as sns
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+import pcl
 
-iris = datasets.load_iris()
-
-
+pc = pcl.load("data.pts") # "pc.from_file" Deprecated
+#cloud = pcl.load_XYZRGBA("tabletop.pcd")
+print(pc)
 # Read Tree Sample data
 
-labels = pd.DataFrame(iris.target)
+labels = pd.DataFrame()
 labels.columns=['labels']
-data = pd.DataFrame(iris.data)
+data = pd.DataFrame()
 data.columns=['X','Y','Z']
 data = pd.concat([data,labels],axis=1)
 
