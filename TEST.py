@@ -1,11 +1,9 @@
 import numpy as np
 import pcl
 
-#Create a random numpy of points; this can be replaced with your point cloud data.
-data = np.random.rand(10000, 3, )
+pc_array = np.array([[1, 2, 3], [3, 4, 5]], dtype=np.float32)
+print(pc_array)
 
-#Create a pcl point cloud.
-p = pcl.PointCloud()
-
-#Add point data to point cloud object.
-p.from_array(data.astype(np.float32))
+#방법 1
+pc = pcl.PointCloud(pc_array)
+print(pc)
