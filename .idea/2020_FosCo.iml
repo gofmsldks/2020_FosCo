@@ -4,7 +4,11 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
+=======
+    <orderEntry type="jdk" jdkName="Python 3.5 (POScoPcl)" jdkType="Python SDK" />
+>>>>>>> 8fc2a1a3629c3b6db802df2714b84fe703ce70bd
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
