@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 import pcl
-
+import
 pc = pcl.load("data.pts") # "pc.from_file" Deprecated
 #cloud = pcl.load_XYZRGBA("tabletop.pcd")
 print(pc)
