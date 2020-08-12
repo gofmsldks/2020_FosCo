@@ -5,93 +5,48 @@ import matplotlib.pyplot  as plt
 import seaborn as sns
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
 import pcl
-import
-pc = pcl.load("data.pts") # "pc.from_file" Deprecated
+
+pc = pcl.load("testdata.pcd") # "pc.from_file" Deprecated
+pc_array = pc.to_array() # pc to Numpy
 #cloud = pcl.load_XYZRGBA("tabletop.pcd")
-print(pc)
 # Read Tree Sample data
 
-labels = pd.DataFrame()
-labels.columns=['labels']
-data = pd.DataFrame()
+data = pd.DataFrame(pc_array)
 data.columns=['X','Y','Z']
-data = pd.concat([data,labels],axis=1)
 
+print(data)
 data.head()
 
-
-# Extract feature
-feature = data[['Sepal length','Sepal width']]
-feature.head()
-
 # create model and prediction
+
 model = KMeans(n_clusters=3,algorithm='auto')
-model.fit(feature)
-predict = pd.DataFrame(model.predict(feature))
+model.fit(data)
+predict = pd.DataFrame(model.predict(data))
 predict.columns=['predict']
 
 # concatenate labels to df as a new column
-r = pd.concat([feature,predict],axis=1)
-
+r = pd.concat([data,predict],axis=1)
 print(r)
 
-# Visualize result
+# Clustering dta visualization
+#2D plot
+plt.scatter(r['X'], r['Y'], r['Z'], c=r['predict'], alpha=0.5)
+# 3d plot
+fig = plt.figure(figsize=(10, 5))
+ax = fig.add_subplot(111, projection='3d') # Axe3D object
+ax.scatter(r['X'], r['Y'], r['Z'], c=r['predict'], alpha=0.5)
 
-centers = pd.DataFrame(model.cluster_centers_,columns=['Sepal length','Sepal width'])
-center_x = centers['Sepal length']
-center_y = centers['Sepal width']
+centers = pd.DataFrame(model.cluster_centers_,columns=['X','Y','Z'])
+center_x = centers['X']
+center_y = centers['Y']
+center_z = centers['Z']
 
-# scatter plot
-plt.scatter(r['Sepal length'],r['Sepal width'],c=r['predict'],alpha=0.5)
-plt.scatter(center_x,center_y,s=50,marker='D',c='r')
+# if you want to see 2D centroid plot delete below #
+# plt.scatter(center_x,center_y,center_z, marker='D',c='b')
+
+# if you want to see 3D centroid plot
+ax.scatter(center_x,center_y,center_z,s=50, marker='D',c='r')
 plt.show()
-
-# Evaluate model with Cross tabuliazation
-
-ct = pd.crosstab(data['labels'],r['predict'])
-print (ct)
-
-# Standarize value
-
-scaler = StandardScaler()
-model = KMeans(n_clusters=3)
-pipeline = make_pipeline(scaler,model)
-pipeline.fit(feature)
-predict = pd.DataFrame(pipeline.predict(feature))
-predict.columns=['predict']
-
-# concatenate labels to df as a new column
-r = pd.concat([feature,predict],axis=1)
-
-ct = pd.crosstab(data['labels'],r['predict'])
-print (ct)
-
-# Feature distribution check
-plt.subplot(1,2,1)
-plt.hist(data['Sepal length'])
-plt.title('Sepal length')
-plt.subplot(1,2,2)
-plt.hist(data['Sepal width'])
-plt.title('Sepal width')
-plt.show()
-
-
-# Determine number of clusters with Inertia value¶
-ks = range(1, 10)
-inertias = []
-
-for k in ks:
-    model = KMeans(n_clusters=k)
-    model.fit(feature)
-    inertias.append(model.inertia_)
-
-# Plot ks vs inertias
-plt.plot(ks, inertias, '-o')
-plt.xlabel('number of clusters, k')
-plt.ylabel('inertia')
-plt.xticks(ks)
-plt.show()
-
-
-

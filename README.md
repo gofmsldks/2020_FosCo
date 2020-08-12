@@ -16,12 +16,17 @@ https://gist.github.com/IgniparousTempest/ce5fadbe742526d10d6bdbf15c3a3fe7
 
 @pcl 전반적인 설명(c++, python 설치방법도 나와있음, 제일 깔끔)
 ->https://adioshun.gitbooks.io/pcl/content/pytncloud.html
+->https://adioshun.gitbooks.io/pcl-tutorial/content/part-1/part01-chapter01/part01-chapter01-open3d-python.html
 
 @아나콘다 파이썬 설치시 Can not import pcl, boost version error. #285 오류 해결법 
 ->https://github.com/strawlab/python-pcl/issues/285
 
 @pts 파일을 pcd로 바꿔주는 코드
 ->https://gist.github.com/omair18/f3b85a7085b5b006c5ba919269f1db3c
+
+@윈도우 PCL 설치법
+https://neinnil.wordpress.com/2018/01/21/%EC%9C%88%EB%8F%84%EC%9A%B0%EC%A6%88%EC%97%90-pcl-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
+https://codingcoding.tistory.com/408
 
 @빌드 방법(C++)
 
