@@ -9,9 +9,9 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import pcl
 
-pc = pcl.load("testdata.pcd") # "pc.from_file" Deprecated
+pc = pcl.load("data2.pcd") # "pc.from_file" Deprecated
 pc_array = pc.to_array() # pc to Numpy
-
+20
 #cloud = pcl.load_XYZRGBA("tabletop.pcd")
 # Read Tree Sample data
 
