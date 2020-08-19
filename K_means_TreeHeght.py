@@ -9,9 +9,9 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import pcl
 
-pc = pcl.load("data2.pcd") # "pc.from_file" Deprecated
+pc = pcl.load("지면제거data2.pcd") # "pc.from_file" Deprecated
 pc_array = pc.to_array() # pc to Numpy
-20
+
 #cloud = pcl.load_XYZRGBA("tabletop.pcd")
 # Read Tree Sample data
 
@@ -51,7 +51,7 @@ print(r)
 #2D plot
 plt.scatter(r['X'], r['Y'], r['Z'], c=r['predict'], alpha=0.5)
 # 3d plot
-fig = plt.figure(figsize=(20, 10))
+fig = plt.figure(figsize=(10, 10))
 ax = fig.add_subplot(111, projection='3d') # Axe3D object
 ax.scatter(r['X'], r['Y'], r['Z'], c=r['predict'], alpha=0.5)
 
