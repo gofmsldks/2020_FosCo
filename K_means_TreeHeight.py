@@ -9,7 +9,7 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import pcl
 
-pc = pcl.load("지면제거data2.pcd") # "pc.from_file" Deprecated
+pc = pcl.load("testdata.pcd") # "pc.from_file" Deprecated
 pc_array = pc.to_array() # pc to Numpy
 
 #cloud = pcl.load_XYZRGBA("tabletop.pcd")
@@ -21,7 +21,7 @@ data.columns=['X','Y','Z']
 print(data)
 
 # we can find appropriate the number of clusters with Inertia
-'''ks = range(1, 5) # range denpend on k's number
+ks = range(1, 2) # range denpend on k's number
 inertias = []
 
 for k in ks:
@@ -35,7 +35,7 @@ plt.xlabel('number of clusters, k')
 plt.ylabel('inertia')
 plt.xticks(ks)
 plt.show()
-'''
+
 # create model and prediction
 k_Num = int(input("input k: "))
 model = KMeans(n_clusters=k_Num, algorithm='auto')
