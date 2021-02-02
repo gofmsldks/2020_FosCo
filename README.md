@@ -90,20 +90,20 @@ make
 
 # python, colab에서 pcl 설치
 
--> colab, 파이썬 환경에서 pcl 구축(Fosco 소스코드.ipynb)
+-> colab, 파이썬 환경에서 pcl 구축(Fosco.ipynb)
 
 
 1. colab
 
-colab 환경에 pcl설치와 기타 설치시 문제가 되는 모든 환경을 해결하기 위해서 각 셀마다 해결법을 제시 해놓음
+colab 환경에 pcl설치와 기타 설치시 문제가 되는 모든 환경을 해결하기 위해서 각 셀마다 해결법을 제시 해놓음.
 순서대로 각 셀을 실행시키면 언제 어디서든 설치 및 사용 가능.
+
 <img width="1013" alt="스크린샷 2021-02-03 오전 1 52 54" src="https://user-images.githubusercontent.com/44065090/106635159-dadee180-65c3-11eb-9148-c2fe25c0fe6f.png">
 
 <img width="1015" alt="스크린샷 2021-02-03 오전 1 53 27" src="https://user-images.githubusercontent.com/44065090/106635334-0eba0700-65c4-11eb-996e-578046879730.png">
 
 
-2. pts ? pcd ?
-pts를 pcd로 바꾸는 알고리즘과 pts를 읽어 주는 알고리즘 구현
+2. pts ? pcd ? -> pts를 pcd로 바꾸는 알고리즘과 pts를 읽어 주는 알고리즘 구현.
 
 filename=".pts"
 from numpy import loadtxt
@@ -113,7 +113,7 @@ size=str(lines[:,0].size)
 (중략)
 
 
-3. k means, DBScan, 유클라디안 군집화와 inertia
+3. k means, DBScan, 유클라디안 군집화와 inertia.
 
 나무의 일정 구간의 데이터를 넣으면 자동으로 k means 군집화 기법을 사용하여 라벨링을 해줌, 이때 inertia 함수를 이용하여 k 값을
 추정하게 되는데 이는 팔꿈치 기법이라 하여 일정 범위의 k값을 넣어서 기울기가 완만한 점을 찾아내어 k 값으로 지정하는 방식.
@@ -122,9 +122,9 @@ size=str(lines[:,0].size)
 * 실제 나무
 <img width="409" alt="스크린샷 2021-02-03 오전 2 08 36" src="https://user-images.githubusercontent.com/44065090/106636181-03b3a680-65c5-11eb-8ea9-c74755edd472.png">
 
-
+----------
 < point cloud로 변환>
-
+-------
 
 * 좌표와 그래프로 표현 가능
 
